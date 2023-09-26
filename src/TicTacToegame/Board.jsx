@@ -95,9 +95,9 @@ const Board = () => {
     if (isWinner || state[index] !== null) {
       return; // If there's already a winner or the square is filled, do nothing.
     }
-    const handleReset=()=>{
-        setState(Array(9).fill(null));
-    };
+    // const handleReset=()=>{
+        // setState(Array(9).fill(null));
+    // };
 
     const copyState = [...state];
     copyState[index] = isXTurn ? "X" : "O";
